@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+/*Cadastro Amanda*/
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style type="text/css">
+    .container
+    {
+    float: left;
+    width:820px;
+    height: 820px;
+    margin-right: 5px;
+    padding: 5px;
+    }
+    #camera
+    {
+    background: #a716bd;
+    height: 1010px;
+    width: 1000px;
+    }
+    #salva
+    {
+    background: #02eae2;
+    height: 280px;
+    width: 268px;
+
+    }
+   
+    .container2{
+    float: right;
+    width:420px;
+    height: 480px;
+    margin-left: 5px;
+    padding: 5px;
+    }
+    #previa
+    {
+    background: #780db2;
+    height: 780px;
+    width: 780;
+    margin-left: 5px;
+    padding: 5px;
+    }
+    
+    
+    </style>
+   </head>
+   <body>
+    <div class="container" id="camera"><b>Câmera:</b>
+        <video autoplay></video>  
+        <canvas></canvas>
+        <button>tirar foto</button>
+        <script src="./script.js"></script></div>
+    
+  
+ <div class="container2" id="previa"><b>Login</b>
+        <form method="POST" action="salvatxtmysql.php">
+            <img src="cat.png" height="70" >
+            <h2>Cadastro</h2><br>
+            <label for="nome">Nome</label>
+            <input type="text" size="40" placeholder="Nome "><br>
+           
+            <label for="email">Email:</label>
+            <input type="text" size="40" placeholder="Email Válido"><br>
+            
+            <label for="sexo">Sexo:</label> &nbsp;
+            <label for="mas">Masculino</label>
+            <input type="radio" name="opcao" id="op1">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="opcao" id="op1">
+
+            <label for="outro">Outros</label>
+            <input type="radio" name="opcao" id="op1">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data"><br><br>
+
+
+            
+            <label for="uf">Você é?</label>
+            <select name="estado" id="uf">
+            <option value="0">Cidade</option>
+            <optgroup label="Escolha uma opcao">
+                <option value="1">Acre</option>
+                <option value="2">Alagoas</option>
+                <option value="3">Amapa</option>
+                <option value="4">Amazonas</option>
+                <option value="5">Bahia</option>
+                <option value="6">Ceara</option>
+                <option value="7">Distrito Federal</option>
+                <option value="8">Espirito Santo</option>
+                <option value="9">Goias</option>
+                <option value="10">Marahao</option>
+                <option value="11">Mato Grosso</option>
+                <option value="12">Mato grosso do Sul</option>
+                <option value="13">Minas Gerais</option>
+                <option value="14">Para</option>
+                <option value="15">Paraiba</option>
+                <option value="16">Parana</option>
+                <option value="17">Pernambuco</option>
+                <option value="18">Piaui</option>
+                <option value="19">Rio de Janeiro</option>
+                <option value="20">Rio Grande do  Norte</option>
+                <option value="21">Rio Grande do  Sul</option>
+                <option value="22">Rondonia</option>
+                <option value="23">Roraima
+                <option value="24">Santa Catarina</option>
+                <option value="25">Sao Paulo</option>
+                <option value="26">Sergipe</option>
+                <option value="27">Tocantins</option>
+                </option>
+                
+            </optgroup>
+
+            
+        </select>  
+        
+        <input type="submit" value="Enviar">
+        
+      
+       
+        </form>
+       
+    </div>
+
+    
+
+
+   
+    
+
+   
+</body>
+
+ 
+</html>
